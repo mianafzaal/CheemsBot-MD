@@ -594,7 +594,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
             case 'sc': case 'script': {
-                reply('Script : ୧⍤⃝ 🤦‍♂️')
+                reply('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐛𝐨𝐭 𝐨𝐰𝐧𝐞𝐫😈🧐')
             }
             break
             case 'chat': {
@@ -2482,7 +2482,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_𝐌𝐈𝐀?? 𝐁𝐎𝐓😈-MD_",
+                    footerText: "_𝐌𝐈𝐀?? ??𝐎𝐓😈-MD_",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
