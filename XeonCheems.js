@@ -100,7 +100,7 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 	
 //[target]\\
 	const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://chat.whatsapp.com/HxUnX7obAiaGfTlHSiR6rO"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://wa.me/:923430436852"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
