@@ -100,7 +100,7 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 	
 //[target]\\
 	const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": `𝐢𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 😈`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://www.instagram.com/invites/contact/?i=1j5iqgaw8otu6&utm_content=npn2vzp"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": `𝐢𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 😈`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://instagram.com/mian_savage_boy?utm_medium=copy_link"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
@@ -2427,7 +2427,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Hi 🤚 ${pushname}
+                            hydratedFooterText: `Hi 🤚 ${pushname} 
 How Are You? 😊
 
 
@@ -2447,7 +2447,7 @@ Please Select Button Below
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'instagram📍',
-                                    url: 'https://instagram.com/mian_savage_boy?utm_medium=copy_link'
+                                    url: 'https://instagram com/mian_savage_boy?utm_medium=copy_link'
                                 }
                             }, {
                             	urlButton: {
@@ -2482,7 +2482,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_𝐌𝐈𝐀?? ??𝐎𝐓😈-MD_",
+                    footerText: "_𝙼𝙸𝙰𝙽-𝙱𝙾𝚃-𝙼𝙳_",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
@@ -3176,7 +3176,7 @@ break
   │🧱 ${prefix}couplepp
   ╰─────────────⦁
   
-  ╭──❰𝗙𝗨𝗡 𝗠𝗘𝗡??❱
+  ╭──❰𝗙𝗨𝗡 𝗠𝗘𝗡𝗨❱
   │🪟 ${prefix}couple
   │🪟 ${prefix}mysoulmate
   │🪟 ${prefix}math
