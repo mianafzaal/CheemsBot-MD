@@ -100,7 +100,7 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 	
 //[target]\\
 	const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": `bot owner👇🏻😈`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://wa.me/:923430436852"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": `𝐢𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 😈`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://www.instagram.com/invites/contact/?i=1j5iqgaw8otu6&utm_content=npn2vzp"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
@@ -3176,7 +3176,7 @@ break
   │🧱 ${prefix}couplepp
   ╰─────────────⦁
   
-  ╭──❰𝗙𝗨𝗡 𝗠𝗘𝗡𝗨❱
+  ╭──❰𝗙𝗨𝗡 𝗠𝗘𝗡??❱
   │🪟 ${prefix}couple
   │🪟 ${prefix}mysoulmate
   │🪟 ${prefix}math
