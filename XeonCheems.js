@@ -1470,7 +1470,7 @@ case 'antilink':
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `🟢 No : ${no++}\n🟣 Type : ${i.type}\n🟢 Video ID : ${i.videoId}\n🟢 Title : ${i.title}\n🟤 Views : ${i.views}\n🔴 Duration : ${i.timestamp}\n🟢 Upload At : ${i.ago}\n🟠 Author : ${i.author.name}\n🟢 Url : ${i.url}\n\n─────────────────\n\n`
+                    teks += `🟢 No : ${no++}\n🟣 Type : ${i.type}\n🟢 Video ID : ${i.videoId}\n🟢 Title : ${i.title}\n🟤 Views : ${i.views}\n🔮 Duration : ${i.timestamp}\n🟢 Upload At : ${i.ago}\n🟠 Author : ${i.author.name}\n🟢 Url : ${i.url}\n\n─────────────────\n\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -1481,7 +1481,7 @@ case 'antilink':
                 google({'query': text}).then(res => {
                 let teks = `Google Search From : ${text}\n\n`
                 for (let g of res) {
-                teks += `🟣 *Title* : ${g.title}\n`
+                teks += `🔮 *Title* : ${g.title}\n`
                 teks += `🟢 *Description* : ${g.snippet}\n`
                 teks += `⚫ *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
@@ -1517,7 +1517,7 @@ case 'antilink':
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                     ngen = `
-🟢 Title : ${anu.title}
+🔮 Title : ${anu.title}
 🟠Ext : Search
 🟢 ID : ${anu.videoId}
 🔵 Duration : ${anu.timestamp}
@@ -1561,7 +1561,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('Audio size is too big '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `🟣 Title : ${media.title}\n🔴 File Size : ${media.filesizeF}\n🟢 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🔵 Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `🔮 Title : ${media.title}\n🔴 File Size : ${media.filesizeF}\n🟢 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🔵 Resolution : ${args[1] || '320kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1571,7 +1571,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('Video size is too big '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⚪ Title : ${media.title}\n🟠 File Size : ${media.filesizeF}\n🔴 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🟣 Resololution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔮 Title : ${media.title}\n🟠 File Size : ${media.filesizeF}\n🔴 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🟣 Resololution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getmusic': {
@@ -1584,7 +1584,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 999999) return reply('Audio size is too big '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `🟣 Title : ${media.title}\n🟢 File Size : ${media.filesizeF}\n⚫ Url : ${isUrl(text)}\n🟡 Ext : MP3\n🔴 Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `🔮 Title : ${media.title}\n🟢 File Size : ${media.filesizeF}\n⚫ Url : ${isUrl(text)}\n🟡 Ext : MP3\n🔴 Resolution : ${args[1] || '320kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1598,7 +1598,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔵 Title : ${media.title}\n🟤 File Size : ${media.filesizeF}\n🟠 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🟣 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔮 Title : ${media.title}\n🟤 File Size : ${media.filesizeF}\n🟠 Url : ${isUrl(text)}\n🟢 Ext : MP3\n🟣 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
             case 'pinterest': {
